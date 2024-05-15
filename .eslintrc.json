@@ -1,0 +1,31 @@
+{
+    //ai file ta ami nia ashlam autometic ausheni
+    //r ami akbar install koree abr uninstall koree abr install korlam...atee kono change holo kina...kivabe bujbo,
+
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 12,
+      "sourceType": "module",
+    },
+    "plugins": ["@typescript-eslint"],
+    "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
+  
+    "rules": {
+      "no-unused-vars": "error",
+      "no-unused-expressions" : "error",
+      "prefer-const" : "error",
+      "no-console" : "warn",
+      "no-undef" : "error"
+     
+      
+    },
+
+    "globals": {
+        "process" : "readonly"
+    },
+  
+    "env": {
+      "browser": true,
+      "es2021": true
+    }
+  }
